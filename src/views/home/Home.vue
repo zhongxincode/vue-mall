@@ -5,14 +5,18 @@
       <div slot="center">购物街</div>
     </nav-bar>
     <home-swiper :banners="banners"></home-swiper>
+    <recommend-view :recommends="recommends"></recommend-view>
   </div>
 </template>
 
 <script>
 import NavBar from 'components/common/navbar/NavBar';
 import HomeSwiper from './childComps/HomeSwiper.vue';
+import RecommendView from './childComps/RecommendView.vue';
+
 
 import {getHomeMultidata} from 'network/home';
+
 
 export default {
   data() {
@@ -23,7 +27,8 @@ export default {
   },
   components: {
     NavBar,
-    HomeSwiper
+    HomeSwiper,
+    RecommendView
   },
   created() {
     // 1. 请求多个数据
