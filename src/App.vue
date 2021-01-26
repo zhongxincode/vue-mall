@@ -1,14 +1,16 @@
 <template>
   <div id="app">
+    <main-tab-bar></main-tab-bar>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MainTabBar from 'components/content/mainTabbar/MainTabBar.vue'
 
 export default {
   name: 'App',
   components: {
+    MainTabBar
   }
 }
 </script>
